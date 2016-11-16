@@ -1,0 +1,48 @@
+29/06/2016 05:05:29 pm -> 192.168.1.78 -> settings.php -> session not set
+29/06/2016 05:05:32 pm -> 192.168.1.78 -> settings.php -> session not set
+29/06/2016 05:15:13 pm -> 192.168.1.78 -> settings.php -> session not set
+29/06/2016 05:15:29 pm -> 192.168.1.78 -> settings.php -> session not set
+29/06/2016 05:15:47 pm -> 192.168.1.78 -> settings.php -> session not set
+29/06/2016 05:15:51 pm -> 192.168.1.78 -> settings.php -> session not set
+29/06/2016 05:17:08 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+29/06/2016 05:17:11 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+29/06/2016 07:06:54 pm -> 192.168.1.78 -> pursuit.php -> failed to compare post (xr4qfCnfoJXJF5gAeOFMBPR/T+chp5NyqyWkzVtoEmQ=) and session (8nFaAMKUFa1OXO67ANbifvdU8If26yaktErF8dhj/7o=)
+29/06/2016 07:09:21 pm -> 192.168.1.78 -> pursuit.php -> failed to compare post (HZvECAGzYLW4YCufrl4C9B+THqC3kZqi+KpOYALa0uo=) and session (stU3D9THcreKpnyg1b0uhtsG7hko0zZzxQr0rhepyb8=)
+30/06/2016 05:52:33 pm -> 192.168.1.78 -> settings_band_members.php -> failed to compare post (y9uhvwYGEtSj9iDI4O+3jAgUTpyb74FsbSA8DKatgk8=) and session (lLHIPuWLdrQOpF/7C2/+j7YXKiWifbCA7q+NdsR2+E4=)
+30/06/2016 05:52:38 pm -> 192.168.1.78 -> settings_band_members.php -> failed to compare post (y9uhvwYGEtSj9iDI4O+3jAgUTpyb74FsbSA8DKatgk8=) and session (lLHIPuWLdrQOpF/7C2/+j7YXKiWifbCA7q+NdsR2+E4=)
+30/06/2016 08:10:01 pm -> 192.168.1.78 -> experience_agent.php -> failed to compare post (i/JfQf5A0rps0h1zSP7KIpFRBM0l20VuvJ9LAGp/DCk=) and session (pH640z9ycq+ZjAZwkGxVrqJMtN8YA1yTX8S/XWglAW8=)
+30/06/2016 08:44:50 pm -> 192.168.1.78 -> experience_band.php -> failed to compare post (ALVOAVMKbAJlszGQX1/fp6Yb5NKN28mrvjbXknfPVdY=) and session (Sxz4DSiHvspKPHrI6Juh6Ldzydr4Ms1CGADH6r9ok/k=)
+01/07/2016 07:45:29 pm -> 192.168.1.78 -> pursuit.php -> session not set
+21/07/2016 08:36:47 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (Ih5PIFdhqggcAGRyhjqG4QGSieZIy+/rktoYtg2QHH0=) and session (pUDdgzvLVofPNJKGjEkMRogjKM0AehRyUD/nUCX/gJA=)
+21/07/2016 08:36:50 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (Ih5PIFdhqggcAGRyhjqG4QGSieZIy+/rktoYtg2QHH0=) and session (P/7h6xQGlodVSSgUhRTajiC9ly9gm/maiRXSV0IT0rM=)
+21/07/2016 08:36:52 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (Ih5PIFdhqggcAGRyhjqG4QGSieZIy+/rktoYtg2QHH0=) and session (vCP45ph8zL8uVjdCYAVkHubty/23H46TgytCBn+AvIo=)
+21/07/2016 08:37:04 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (7JcYh8baS0ZgGmPEM4InS3a0uMdFC+2SEZ71iU07PzU=) and session (7+e5nbNT2af593qatncwe8rxZJfE8fmfWV9h7vNnxpk=)
+21/07/2016 08:37:43 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (7JcYh8baS0ZgGmPEM4InS3a0uMdFC+2SEZ71iU07PzU=) and session (9Mdc0E6dbXbBpa57+0qWtpnvQ7qHUZeAb8vi2YSc2UM=)
+21/07/2016 08:37:47 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (jSY9cA2t1vhc39TQJIYA76EIOxbMdzu2IAVgvgioxzk=) and session (PmuA+w7Of5J28vk/XyrPc/8/s1CyxC/zcLlnJH/109w=)
+21/07/2016 08:37:58 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (jSY9cA2t1vhc39TQJIYA76EIOxbMdzu2IAVgvgioxzk=) and session (FQ4jVCDoPHS58o43v3hPCsV84bz0h0g0UqZSFu+DYXQ=)
+21/07/2016 08:38:03 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (+3U6bmNJO12Qvz3auNJcbOtwMrxAdRpbfsP51qhEt3s=) and session (HV9s/NwsTIMQ8PV9PPJOTjVdw+YQIqDsyVdnbu32mVg=)
+21/07/2016 08:38:06 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (+3U6bmNJO12Qvz3auNJcbOtwMrxAdRpbfsP51qhEt3s=) and session (aTPPAERpx/C2/opkOjkuq+GNpOqiHCRTt4eK6ZnwgWI=)
+21/07/2016 08:38:18 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (+3U6bmNJO12Qvz3auNJcbOtwMrxAdRpbfsP51qhEt3s=) and session (QJspFRz6LZ++Ol9u0KrW/0JzfvpBeMyz3n3bP3sl4B4=)
+21/07/2016 08:39:47 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (BEeGoHL3FS4u7WSRDRA2LTIiYBNFFy46SjcVnIfCCsI=) and session (ub+EzBl7qQkPBtJhk6jpO70A62UEflK9iw45vJiIcq0=)
+21/07/2016 08:40:17 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (BEeGoHL3FS4u7WSRDRA2LTIiYBNFFy46SjcVnIfCCsI=) and session (Fl7OLTQbT4Z2ytZ2skSs5ACo9bph3rcavieMavrIw8E=)
+21/07/2016 08:40:22 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (AG4pwKy1xbUuhZeGxs90p3pktf3ECVc/CG8h+JF5FY0=) and session (l28oZyyjOvPHX8WrBEyQzoz0NZtP0x/4RFdwUlYVHI8=)
+21/07/2016 08:40:51 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (AG4pwKy1xbUuhZeGxs90p3pktf3ECVc/CG8h+JF5FY0=) and session (l28oZyyjOvPHX8WrBEyQzoz0NZtP0x/4RFdwUlYVHI8=)
+21/07/2016 08:41:06 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (AG4pwKy1xbUuhZeGxs90p3pktf3ECVc/CG8h+JF5FY0=) and session (l28oZyyjOvPHX8WrBEyQzoz0NZtP0x/4RFdwUlYVHI8=)
+21/07/2016 08:41:27 pm -> 192.168.1.78 -> register_pre.php -> failed to compare post (GxiPrnuaI+YIefIGJTD3YY6zt8eo5N9mT+cD2CtVdIY=) and session (ahmLGFrPh8z4Ncj+VO6fEJa32+vzUSB1TlNUWgOj4n8=)
+22/07/2016 06:31:21 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+22/07/2016 06:31:24 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 05:24:31 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 05:24:34 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 05:29:44 pm -> 192.168.1.78 -> login.php -> session not set
+23/07/2016 05:29:52 pm -> 192.168.1.78 -> login.php -> session not set
+23/07/2016 05:37:43 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 05:37:46 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 06:35:54 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 07:03:33 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 07:03:37 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 07:03:39 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 07:03:42 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 07:03:46 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+23/07/2016 07:09:10 pm -> 192.168.1.78 -> experience_musician_alone.php -> session not set
+26/08/2016 09:01:28 pm -> 192.168.1.78 -> register.php?role=4 -> session not set
+26/08/2016 09:01:31 pm -> 192.168.1.78 -> register.php?role=4 -> session not set

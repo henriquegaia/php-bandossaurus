@@ -1,0 +1,413 @@
+##########################################
+##########################################
+##########################################
+##########################################
+#          MAKE A BAND STUFF             #
+##########################################
+##########################################
+##########################################
+##########################################
+
+==========================================
+P0-a ERRORS (important)
+==========================================
+ 
+    -Local
+
+        -cookies for user sessions
+            -is_online is set to 1 when before logging
+                -idea 1: onbeforeunload, post to force_logout.php
+
+        -wherever that are locations filling selects, the time to load is long
+
+==========================================
+LIVE TESTS
+==========================================
+
+        -register                                           YES
+        -login                                              YES
+        -edit
+            -settings                                       YES
+            -password                                       YES
+            -exp                                            YES
+            -pursuit                                        YES
+        -send message                                       YES
+        -send invitation                                    YES
+        -logout                                             YES
+
+==========================================
+P1-NOT TESTED
+==========================================
+
+==========================================
+P2-HIGH
+==========================================
+
+    -paypal
+        -test live 
+    
+    --------------------------------------
+
+    -promote on facebook
+
+    -github/bitbucket
+
+    -create a .env file with the credentials
+
+    -admin account
+
+==========================================
+P3-AVERAGE
+==========================================
+
+    -google adsense
+
+    -facebook adwords
+
+    -create company
+
+    -VAT number
+    
+    -on update/delete table values add a column with 'edit remove'
+
+    -print every date in user friendly format
+
+    -location selects
+        -usa cities takes too long to load: change to input text
+            -Solution: send locations from js to php
+                -already some done in global.js -> $(document).ready 
+                    and Presentation::get_input_city_country
+
+    -data coordinates
+        -brazil, england, portugal cities
+
+    -search
+        -if proximity, show ordered
+        -the detailed location is only sent via post
+            when i click 2x 'by region/country/city'
+        -the inner join for instruments and genre:
+            -example: if inst=guitar, will return users that have both expe alone 
+            AND with bands on guitar. instead of AND should be OR
+
+    -dummy::generate:
+        -Warning: mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\_projetos\Others\make-a-band\repository\BaseRepository.php on line 130
+        
+    -allow to delete several rows of a table at a time
+    -page in case csrf
+    -on user is logged in
+        -dont allow the access to
+            -login.php
+    -more elegant solution to table overflow
+        -for now: 
+            #container -> overflow: auto;
+    -generic_end &  generic_end_no_reset
+        -do not redirect to index
+    -improve css of form title
+        -ex: update band member
+    -cities.js
+        -consider breaking down uk (and others) into countries
+        -check for countries without cities
+    -truncate 
+        -not working on constraints
+    -add file with usa areas, zips and coordinates 
+        -toadd/cities_2
+    
+    -make presentation methods args organized
+        -elem_name
+        -data
+        -title
+    -use cache to avoid database overload
+        -use redis
+    -storage stuff in cloud, like laravel
+    -mail queue
+    -validations other details in register ( get_label_and_empty_text_area() )
+    -names of fields are not coherent
+
+==========================================
+P0-b ERRORS (not important)
+==========================================
+
+    -center the content of pages
+        -login
+        -settings
+        -...
+
+    -avoid global vars on init that go to db
+
+    -use php functions to set urls in js
+
+    -pursuit
+        -js: validate status if instrument is disabled
+
+    -in js validate_txt_area() is not receiving the regex 
+           from get_label_and_empty_text_area() (in general.php);
+           because of that, in php it shouldn't work either
+
+    -regex
+        -empty last name not accepted
+
+    -js validation
+        -CHROME: create forms not working
+
+    -populate form
+        -location on experience forms
+
+    -experience
+        -why, sometimes, the create form has the data from update form?
+        -reset not working
+
+    -forms
+        -doesn't accept 0 in txt fields (read has empty)
+
+==========================================
+P4-LOW
+==========================================
+
+    -Apply machine learning
+    -validate username on register
+        -if it exists...
+
+==========================================
+User Pursuit
+==========================================
+
+requirements:
+    -registered
+    -settings done
+    -experience done
+
+classes:
+    -UserPursuit
+        -create()
+        -delete()
+        -update()
+
+tables:
+    -user_pursuit
+        -id,user_id,role,urgency,created_at,updated_at
+
+    -band_pursuit_musician
+    -musician_pursuit_band_with_experience
+        -instrument
+        -(?)genre,
+
+    -band_pursuit_agent
+    -musician_pursuit_agent
+    -agent_pursuit_band
+    -agent_pursuit_musician
+        -()
+
+        regular                         premium
+        can't edit urgency              can
+        only one pursuit for role       unlimited
+
+
+==========================================
+Search
+==========================================
+
+requirements:
+    -the users listed in the results need to have a request
+
+classes:
+    SearchForMusicians
+    SearchForBands
+    SearchForAgents
+
+        methods:
+            get_all
+            get_top_10
+
+results:
+    -top 10 results on index
+
+        -link to show all (here the table can be ordered as user wants)
+            -SearchForBands.php (view)
+            -SearchForAgents.php (view)
+        -musicians looking for bands
+        -musicians looking for agents
+
+        -link to show all (here the table can be ordered as user wants)
+        -bands looking for musicians
+        -bands looking for agents
+
+        -link to show all (here the table can be ordered as user wants)
+        -agents looking for musicians
+        -agents looking for bands
+
+
+==========================================
+Flow
+==========================================
+
+pursuit     ->      search      ->      apply
+
+##########################################
+##########################################
+##########################################
+##########################################
+#           TEMPLATE STUFF               #
+##########################################
+##########################################
+##########################################
+##########################################
+
+==========================================
+P0-a ERRORS (important)
+==========================================
+
+==========================================
+P1-NOT TESTED
+==========================================
+        
+
+==========================================
+P2-HIGH
+==========================================
+
+    -xampp files configurations
+
+    -other users can ask for my password to be recovered
+    -save sql db info
+    -test malicious user input -> http://cwe.mitre.org/top25/ 
+    -bitbucket
+
+==========================================
+P3-AVERAGE
+==========================================
+    
+    -don't use hard code text to refer to db column (users.php get_sec_question_text())
+    -use placeholder on forms
+    -consider not putting regex txt on forms
+    -database columns in config
+        -use them in init.php
+    -profile images:
+        -put thumbnail on widget
+        -place them in separate user folders
+        -delete img when user changes image profile
+        -editable on settings
+        -present on unique size
+        -delete img_crop_test_1 files
+    -user should return to current page after login
+        -finish the function get_previous_page() in general.php and then redirect to that page in login.php
+
+==========================================
+P0-b ERRORS (not important)
+==========================================
+
+    -output_errors IN activate.php not working
+    -error appearing when changing profile image
+
+==========================================
+P4-LOW
+==========================================
+
+    -clean css
+    -when sending mass email, add a progress bar
+    -when not logged in, instead of 'login' show fields username and psw
+    -delete profile
+    -on config.php, change stuff that should be on url
+    -multi languages
+    -js alert if form invalid
+    -create own hash
+    -general.php (send_email_phpmailer):
+        -improve error log email: sender, recipient 
+    -when filling forms accept spaces when they are in the end (ex: first_name)
+    -register:
+        -i am not a robot (need to publish site first): http://webdesign.tutsplus.com/pt/tutorials/how-to-integrate-no-captcha-recaptcha-in-your-website--cms-23024
+    -recover:
+        -security question    
+    -improve the message sent to user to activate account
+    -when profile image is very high, it can overlap the footer
+    -js file with paths
+
+==========================================
+Requirements
+==========================================
+
+    -phpmailer
+
+==========================================
+Garbage 
+==========================================
+
+    ./css/jquery_ui/...
+    ./css/image_crop.css
+
+    ./includes/widgets/wi_logged_in_old.php
+    ./includes/widgets/wi_login_old.php
+    ./includes/widgets/wi_user_count_old.php
+    ./includes/aside.php
+
+    ./js/jquery_ui/...
+    ./js/image_crop.js
+
+    ./tests/...
+
+    ./unused/...
+
+==========================================
+Warnings
+==========================================
+
+    -do not use lateral widget
+
+==========================================
+BEFORE 1ST DEPLOY
+==========================================
+ 
+    -.htaccess
+        -change path so that profile is accessible
+
+    -change project state
+        -Project.php
+        -urls.js
+
+==========================================
+AFTER 1ST DEPLOY
+==========================================
+
+    -test db access
+    -test user creation
+        -check email
+    -test paypal
+
+==========================================
+BEFORE EVERY DEPLOY
+==========================================
+
+    -.htaccess
+        -change path so that profile is accessible
+
+    -change project state
+        -Project.php
+        -urls.js
+
+    -init.php
+        -error reporting
+
+
+==========================================
+BEFORE CHANGING CODE
+==========================================
+
+    -.htaccess
+        -change path so that profile is accessible
+
+    -change project state
+        -Project.php
+        -urls.js
+
+    -init.php
+        -error reporting
+
+==========================================
+WHEN PREMIUM PROMOTION ENDS
+==========================================
+
+    -uncomment code on premium.php
+    -set every ser to premium=0
+    -set default value of premium to 0
+    -remove alert on menu saying everyone has premium access till 30 Sep
+    -change the price of premium on premium.php
+
