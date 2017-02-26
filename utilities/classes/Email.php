@@ -13,8 +13,8 @@ class Email {
     private static function set_vars() {
         if (Project::testing()) {
             self::$phpmailer_host = 'smtpgmail.com';
-            self::$phpmailer_user = 'henriquebroculo@gmail.com';
-            self::$phpmailer_pass = 'gugliel00';
+            self::$phpmailer_user = '********';
+            self::$phpmailer_pass = '********';
             self::$phpmailer_smtp_secure = 'auto';
             self::$phpmailer_port = 587;
         } else {
